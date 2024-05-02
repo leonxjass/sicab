@@ -1,0 +1,16 @@
+C:\Users\anderson.leon\Desktop\form_sysccab\bin\Debug\net8.0-windows\form_sysccab.exe
+C:\Users\anderson.leon\Desktop\form_sysccab\bin\Debug\net8.0-windows\form_sysccab.deps.json
+C:\Users\anderson.leon\Desktop\form_sysccab\bin\Debug\net8.0-windows\form_sysccab.runtimeconfig.json
+C:\Users\anderson.leon\Desktop\form_sysccab\bin\Debug\net8.0-windows\form_sysccab.dll
+C:\Users\anderson.leon\Desktop\form_sysccab\bin\Debug\net8.0-windows\form_sysccab.pdb
+C:\Users\anderson.leon\Desktop\form_sysccab\obj\Debug\net8.0-windows\form_sysccab.csproj.GenerateResource.cache
+C:\Users\anderson.leon\Desktop\form_sysccab\obj\Debug\net8.0-windows\form_sysccab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anderson.leon\Desktop\form_sysccab\obj\Debug\net8.0-windows\form_sysccab.AssemblyInfoInputs.cache
+C:\Users\anderson.leon\Desktop\form_sysccab\obj\Debug\net8.0-windows\form_sysccab.AssemblyInfo.cs
+C:\Users\anderson.leon\Desktop\form_sysccab\obj\Debug\net8.0-windows\form_sysccab.csproj.CoreCompileInputs.cache
+C:\Users\anderson.leon\Desktop\form_sysccab\obj\Debug\net8.0-windows\form_sysccab.dll
+C:\Users\anderson.leon\Desktop\form_sysccab\obj\Debug\net8.0-windows\refint\form_sysccab.dll
+C:\Users\anderson.leon\Desktop\form_sysccab\obj\Debug\net8.0-windows\form_sysccab.pdb
+C:\Users\anderson.leon\Desktop\form_sysccab\obj\Debug\net8.0-windows\form_sysccab.genruntimeconfig.cache
+C:\Users\anderson.leon\Desktop\form_sysccab\obj\Debug\net8.0-windows\ref\form_sysccab.dll
+C:\Users\anderson.leon\Desktop\form_sysccab\obj\Debug\net8.0-windows\form_sysccab.main_form.resources
