@@ -134,9 +134,9 @@ namespace form_sysccab
             parametrosDelSistemaToolStripMenuItem = new ToolStripMenuItem();
             actualizarMoraToolStripMenuItem = new ToolStripMenuItem();
             configuracionDeTicketToolStripMenuItem = new ToolStripMenuItem();
-            generarAgendaParaElSiguientePeriodoToolStripMenuItem = new ToolStripMenuItem();
             gruposToolStripMenuItem = new ToolStripMenuItem();
             tablasDeEscalamientoToolStripMenuItem = new ToolStripMenuItem();
+            generarAgendaParaElSiguientePeriodoToolStripMenuItem = new ToolStripMenuItem();
             contenedor_panel_mf1.SuspendLayout();
             menuStrip1.SuspendLayout();
             SuspendLayout();
@@ -659,50 +659,50 @@ namespace form_sysccab
             // bancosToolStripMenuItem
             // 
             bancosToolStripMenuItem.Name = "bancosToolStripMenuItem";
-            bancosToolStripMenuItem.Size = new Size(180, 22);
+            bancosToolStripMenuItem.Size = new Size(174, 22);
             bancosToolStripMenuItem.Text = "Bancos";
             // 
             // cuentasCorrientesToolStripMenuItem
             // 
             cuentasCorrientesToolStripMenuItem.Name = "cuentasCorrientesToolStripMenuItem";
-            cuentasCorrientesToolStripMenuItem.Size = new Size(180, 22);
+            cuentasCorrientesToolStripMenuItem.Size = new Size(174, 22);
             cuentasCorrientesToolStripMenuItem.Text = "Cuentas Corrientes";
             // 
             // serviciosToolStripMenuItem
             // 
             serviciosToolStripMenuItem.Name = "serviciosToolStripMenuItem";
-            serviciosToolStripMenuItem.Size = new Size(180, 22);
+            serviciosToolStripMenuItem.Size = new Size(174, 22);
             serviciosToolStripMenuItem.Text = "Precios y Servicios";
             serviciosToolStripMenuItem.Click += serviciosToolStripMenuItem_Click;
             // 
             // coloniasToolStripMenuItem
             // 
             coloniasToolStripMenuItem.Name = "coloniasToolStripMenuItem";
-            coloniasToolStripMenuItem.Size = new Size(180, 22);
+            coloniasToolStripMenuItem.Size = new Size(174, 22);
             coloniasToolStripMenuItem.Text = "Colonias";
             // 
             // empresasDeCableToolStripMenuItem
             // 
             empresasDeCableToolStripMenuItem.Name = "empresasDeCableToolStripMenuItem";
-            empresasDeCableToolStripMenuItem.Size = new Size(180, 22);
+            empresasDeCableToolStripMenuItem.Size = new Size(174, 22);
             empresasDeCableToolStripMenuItem.Text = "Empleados";
             // 
             // personasToolStripMenuItem
             // 
             personasToolStripMenuItem.Name = "personasToolStripMenuItem";
-            personasToolStripMenuItem.Size = new Size(180, 22);
+            personasToolStripMenuItem.Size = new Size(174, 22);
             personasToolStripMenuItem.Text = "Empresas de cable";
             // 
             // oficinasToolStripMenuItem
             // 
             oficinasToolStripMenuItem.Name = "oficinasToolStripMenuItem";
-            oficinasToolStripMenuItem.Size = new Size(180, 22);
+            oficinasToolStripMenuItem.Size = new Size(174, 22);
             oficinasToolStripMenuItem.Text = "Oficinas";
             // 
             // promocionesToolStripMenuItem
             // 
             promocionesToolStripMenuItem.Name = "promocionesToolStripMenuItem";
-            promocionesToolStripMenuItem.Size = new Size(180, 22);
+            promocionesToolStripMenuItem.Size = new Size(174, 22);
             promocionesToolStripMenuItem.Text = "Promociones";
             // 
             // vendedoresToolStripMenuItem
@@ -798,12 +798,6 @@ namespace form_sysccab
             configuracionDeTicketToolStripMenuItem.Size = new Size(290, 22);
             configuracionDeTicketToolStripMenuItem.Text = "Configuracion de ticket";
             // 
-            // generarAgendaParaElSiguientePeriodoToolStripMenuItem
-            // 
-            generarAgendaParaElSiguientePeriodoToolStripMenuItem.Name = "generarAgendaParaElSiguientePeriodoToolStripMenuItem";
-            generarAgendaParaElSiguientePeriodoToolStripMenuItem.Size = new Size(290, 22);
-            generarAgendaParaElSiguientePeriodoToolStripMenuItem.Text = "Generar agenda para el siguiente periodo";
-            // 
             // gruposToolStripMenuItem
             // 
             gruposToolStripMenuItem.Name = "gruposToolStripMenuItem";
@@ -815,6 +809,12 @@ namespace form_sysccab
             tablasDeEscalamientoToolStripMenuItem.Name = "tablasDeEscalamientoToolStripMenuItem";
             tablasDeEscalamientoToolStripMenuItem.Size = new Size(195, 22);
             tablasDeEscalamientoToolStripMenuItem.Text = "Tablas de Escalamiento";
+            // 
+            // generarAgendaParaElSiguientePeriodoToolStripMenuItem
+            // 
+            generarAgendaParaElSiguientePeriodoToolStripMenuItem.Name = "generarAgendaParaElSiguientePeriodoToolStripMenuItem";
+            generarAgendaParaElSiguientePeriodoToolStripMenuItem.Size = new Size(290, 22);
+            generarAgendaParaElSiguientePeriodoToolStripMenuItem.Text = "Generar agenda para el siguiente periodo";
             // 
             // main_form
             // 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\anderson.leon\\Desktop\\form_sysccab\\form_sysccab.csproj": {}
+    "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\form_sysccab.csproj": {}
   },
   "projects": {
-    "C:\\Users\\anderson.leon\\Desktop\\form_sysccab\\form_sysccab.csproj": {
+    "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\form_sysccab.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\anderson.leon\\Desktop\\form_sysccab\\form_sysccab.csproj",
+        "projectUniqueName": "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\form_sysccab.csproj",
         "projectName": "form_sysccab",
-        "projectPath": "C:\\Users\\anderson.leon\\Desktop\\form_sysccab\\form_sysccab.csproj",
+        "projectPath": "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\form_sysccab.csproj",
         "packagesPath": "C:\\Users\\anderson.leon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\anderson.leon\\Desktop\\form_sysccab\\obj\\",
+        "outputPath": "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\anderson.leon\\AppData\\Roaming\\NuGet\\NuGet.Config",
