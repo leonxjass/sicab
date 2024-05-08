@@ -1,7 +1,7 @@
 ﻿
 namespace form_sysccab
 {
-    partial class main_form
+    partial class frm_sysccab_menu
     {
         /// <summary>
         ///  Required designer variable.

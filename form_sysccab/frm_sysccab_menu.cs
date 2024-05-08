@@ -1,8 +1,8 @@
 namespace form_sysccab
 {
-    public partial class main_form : Form
+    public partial class frm_sysccab_menu : Form
     {
-        public main_form()
+        public frm_sysccab_menu()
         {
             InitializeComponent();
         }

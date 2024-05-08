@@ -1,58 +1,66 @@
 ﻿using form_sysccab;
-using Microsoft.Data.SqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace form_sysccab_menu
 {
     public partial class frm_sysccab_login : Form
     {
+        SqlConnection conexion = new SqlConnection("Data Source=ITDAJL03;Initial Catalog=prueba;User ID=anderson.leon;Integrated Security=true");
+
         public frm_sysccab_login()
         {
             InitializeComponent();
         }
 
-
-        SqlConnection conexion = new SqlConnection("Data Source=ITDAJL03;Initial Catalog=prueba;User ID=anderson.leon;Integrated Security=true");
-
         private void button1_Click(object sender, EventArgs e)
+        {
+            getConexion();
+        }
+
+        private void getConexion()
         {
             try
             {
+                string consulta = "SELECT * FROM usuarios WHERE nombre_usuario = @usuario AND contraseña = @contraseña";
+                SqlCommand cmd = new SqlCommand(consulta, conexion);
+                cmd.Parameters.AddWithValue("@usuario", txtUsuario.Text);
+                cmd.Parameters.AddWithValue("@contraseña", txtContrasena.Text);
 
-                SqlCommand cmd = new SqlCommand("Select * From usuarios where nombre_usuario='" + txtUsuario.Text + "'and contraseña = '" + txtContrasena.Text + "'", conexion);
+                conexion.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
 
                 if (reader.Read())
                 {
-                    MessageBox.Show("Bienvenido " + reader.GetValue(1) + " " + reader.GetValue(3));
+                    MessageBox.Show("¡Bienvenido " + reader["nombre"] + " " + reader["apellido"] + "!");
+
+                    // Cerrar la conexión
+                    conexion.Close();
+
+                    // Mostrar el formulario del menú
+                    frm_sysccab_menu formularioMenu = new frm_sysccab_menu();
+                    //formularioMenu.Show();
+
+                    // Ocultar este formulario
+                    this.Hide();
                 }
                 else
                 {
-                    MessageBox.Show("Usuario no valido");
+                    MessageBox.Show("Usuario no válido");
                 }
-                reader.Close();
-
-                this.Hide();
-
-                // Mostrar Form2
-                main_form formularioMenu = new main_form();
-
-
-                // Cerrar la aplicación si se cierra Form2
-                this.Close();
-
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                if (conexion.State == ConnectionState.Open)
+                {
+                    conexion.Close();
+                }
             }
         }
 
@@ -60,8 +68,10 @@ namespace form_sysccab_menu
         {
             try
             {
-
-                conexion.Open();
+                if (conexion.State != ConnectionState.Open)
+                {
+                    conexion.Open();
+                }
             }
             catch (Exception ex)
             {

@@ -2305,24 +2305,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eber.giron\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\anderson.leon\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eber.giron\\Desktop\\sicab\\form_sysccab\\form_sysccab_menu.csproj",
+      "projectUniqueName": "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\form_sysccab_menu.csproj",
       "projectName": "form_sysccab_menu",
-      "projectPath": "C:\\Users\\eber.giron\\Desktop\\sicab\\form_sysccab\\form_sysccab_menu.csproj",
-      "packagesPath": "C:\\Users\\eber.giron\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eber.giron\\Desktop\\sicab\\form_sysccab\\obj\\",
+      "projectPath": "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\form_sysccab_menu.csproj",
+      "packagesPath": "C:\\Users\\anderson.leon\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\eber.giron\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\anderson.leon\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2381,7 +2376,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
