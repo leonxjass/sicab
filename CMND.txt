@@ -4,3 +4,4 @@ Push -- push -u origin master
 git remote -- ver que remote tiene Origin u Otro
 gir reset --hard origin/master -- git
 eber conexion
+eber conexion y push
