@@ -1,13 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\",
+  "WorkspaceRootPath": "C:\\Users\\eber.giron\\Desktop\\sicab\\form_sysccab\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BAE55696-A239-4C12-AB66-66CB40278E3B}|form_sysccab_menu.csproj|c:\\users\\anderson.leon\\desktop\\sicab\\form_sysccab\\frm_sysccab_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BAE55696-A239-4C12-AB66-66CB40278E3B}|form_sysccab_menu.csproj|c:\\users\\eber.giron\\desktop\\sicab\\form_sysccab\\frm_sysccab_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BAE55696-A239-4C12-AB66-66CB40278E3B}|form_sysccab_menu.csproj|solutionrelative:frm_sysccab_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAE55696-A239-4C12-AB66-66CB40278E3B}|form_sysccab_menu.csproj|c:\\users\\anderson.leon\\desktop\\sicab\\form_sysccab\\frm_sysccab_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BAE55696-A239-4C12-AB66-66CB40278E3B}|form_sysccab_menu.csproj|c:\\users\\eber.giron\\desktop\\sicab\\form_sysccab\\frm_sysccab_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAE55696-A239-4C12-AB66-66CB40278E3B}|form_sysccab_menu.csproj|solutionrelative:frm_sysccab_login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAE55696-A239-4C12-AB66-66CB40278E3B}|form_sysccab_menu.csproj|C:\\Users\\eber.giron\\Desktop\\sicab\\form_sysccab\\frm_sysccab_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BAE55696-A239-4C12-AB66-66CB40278E3B}|form_sysccab_menu.csproj|solutionrelative:frm_sysccab_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -18,15 +22,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frm_sysccab_login.cs",
+              "DocumentMoniker": "C:\\Users\\eber.giron\\Desktop\\sicab\\form_sysccab\\frm_sysccab_login.cs",
+              "RelativeDocumentMoniker": "frm_sysccab_login.cs",
+              "ToolTip": "C:\\Users\\eber.giron\\Desktop\\sicab\\form_sysccab\\frm_sysccab_login.cs",
+              "RelativeToolTip": "frm_sysccab_login.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAowBYAAAB1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T17:45:16.414Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "frm_sysccab_login.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\frm_sysccab_login.cs",
+              "DocumentMoniker": "C:\\Users\\eber.giron\\Desktop\\sicab\\form_sysccab\\frm_sysccab_login.cs",
               "RelativeDocumentMoniker": "frm_sysccab_login.cs",
-              "ToolTip": "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\frm_sysccab_login.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\eber.giron\\Desktop\\sicab\\form_sysccab\\frm_sysccab_login.cs [Dise\u00F1o]",
               "RelativeToolTip": "frm_sysccab_login.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-08T17:15:16.804Z",
@@ -34,11 +51,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "frm_sysccab_menu.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\frm_sysccab_menu.cs",
+              "DocumentMoniker": "C:\\Users\\eber.giron\\Desktop\\sicab\\form_sysccab\\frm_sysccab_menu.cs",
               "RelativeDocumentMoniker": "frm_sysccab_menu.cs",
-              "ToolTip": "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\frm_sysccab_menu.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\eber.giron\\Desktop\\sicab\\form_sysccab\\frm_sysccab_menu.cs [Dise\u00F1o]",
               "RelativeToolTip": "frm_sysccab_menu.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-08T17:12:06.542Z",
