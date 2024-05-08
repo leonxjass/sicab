@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace form_sysccab
+namespace form_sysccab_menu
 {
-    public partial class Expediente : Form
+    public partial class frm_sysccab_login : Form
     {
-        public Expediente()
+        public frm_sysccab_login()
         {
             InitializeComponent();
         }

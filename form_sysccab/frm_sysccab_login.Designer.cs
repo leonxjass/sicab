@@ -1,6 +1,6 @@
-﻿namespace form_sysccab
+﻿namespace form_sysccab_menu
 {
-    partial class Expediente
+    partial class frm_sysccab_login
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Expediente";
+            this.Text = "frm_sysccab_login";
         }
 
         #endregion

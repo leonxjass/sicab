@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\form_sysccab.csproj",
-      "projectName": "form_sysccab",
-      "projectPath": "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\form_sysccab.csproj",
+      "projectUniqueName": "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\form_sysccab_menu.csproj",
+      "projectName": "form_sysccab_menu",
+      "projectPath": "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\form_sysccab_menu.csproj",
       "packagesPath": "C:\\Users\\anderson.leon\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\obj\\",
       "projectStyle": "PackageReference",

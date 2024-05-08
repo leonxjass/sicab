@@ -1,0 +1,5 @@
+-- COMANDOS IMPORTANTES DE GIT
+
+Push -- push -u origin master
+git remote -- ver que remote tiene Origin u Otro
+gir reset --hard origin/master -- git
