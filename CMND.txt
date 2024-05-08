@@ -6,3 +6,4 @@ gir reset --hard origin/master -- git
 eber conexion
 eber conexion y push
 yohanna conexion
+yohanna conexion push
