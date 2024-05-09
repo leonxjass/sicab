@@ -35,7 +35,7 @@
             btnsalir = new Button();
             txtContrasena = new TextBox();
             label2 = new Label();
-            label3 = new Label();
+            frm_titulo_login = new Label();
             panel1 = new Panel();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
@@ -104,22 +104,23 @@
             label2.TabIndex = 5;
             label2.Text = "Contrasena";
             // 
-            // label3
+            // frm_titulo_login
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(146, 9);
-            label3.Name = "label3";
-            label3.Size = new Size(90, 25);
-            label3.TabIndex = 6;
-            label3.Text = "SYSCCAB";
+            frm_titulo_login.AutoSize = true;
+            frm_titulo_login.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            frm_titulo_login.Location = new Point(139, 76);
+            frm_titulo_login.Name = "frm_titulo_login";
+            frm_titulo_login.Size = new Size(90, 25);
+            frm_titulo_login.TabIndex = 6;
+            frm_titulo_login.Text = "SYSCCAB";
+            frm_titulo_login.Click += frm_titulo_login_Click;
             // 
             // panel1
             // 
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(txtUsuario);
-            panel1.Controls.Add(label3);
+            panel1.Controls.Add(frm_titulo_login);
             panel1.Controls.Add(btnIngresar);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
@@ -188,7 +189,7 @@
         private Button btnsalir;
         private TextBox txtContrasena;
         private Label label2;
-        private Label label3;
+        private Label frm_titulo_login;
         private Panel panel1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;

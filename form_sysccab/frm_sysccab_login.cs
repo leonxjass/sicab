@@ -18,14 +18,32 @@ namespace form_sysccab_menu
          * Instancia de la conexion al SQLSERVER 
          */
 
-        private bool VerificarCredenciales(string usuario, string contrasena) 
+        private string conexionString = "Data Source=ITDAJL03;Initial Catalog=prueba;User ID=anderson.leon;Integrated Security=true";
+
+        private bool VerificarCredenciales(string usuario, string contrasena)
         {
-            /*
-             * Poner aqui la logica de la conexion al sql server para instanciar la conexion
-             * se debe comparar a los parametros del metodo con los campos [nombre_usuario] & [contrasena]
-             * para validar la conexion y que lance el [main_menu] del sistema
-             * Entonces se obtiene los datos de la DB y se comparan contra los parametros del metodo usando el parametro this
-             */
+            using (SqlConnection conexion = new SqlConnection(conexionString))
+            {
+                try
+                {
+                    conexion.Open();
+                    string consulta = "SELECT COUNT(*) FROM usuarios WHERE nombre_usuario = @Usuario AND contrasena = @Contrasena";
+                    SqlCommand command = new SqlCommand(consulta, conexion);
+                    command.Parameters.AddWithValue("@Usuario", usuario);
+                    command.Parameters.AddWithValue("@Contrasena", contrasena);
+                    int count = (int)command.ExecuteScalar();
+                    return count > 0;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al verificar las credenciales: " + ex.Message);
+                    return false;
+                }
+                finally
+                {
+                    conexion.Close();
+                }
+            }
 
             return false;
         }
@@ -39,7 +57,7 @@ namespace form_sysccab_menu
             string user = txtUsuario.Text;          //Recibimos el [value] del label txtUsuario
             string passwd = txtContrasena.Text;     //Recibimos el [value] del label txtContrasena
 
-            if (ValidarUsuario(user, passwd))
+            if (VerificarCredenciales(user, passwd))
             {
                 frm_sysccab_menu mainMenu = new frm_sysccab_menu();
                 mainMenu.Show();
@@ -85,5 +103,9 @@ namespace form_sysccab_menu
 
         }
 
+        private void frm_titulo_login_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
