@@ -55,7 +55,7 @@
             btnIngresar.TabIndex = 0;
             btnIngresar.Text = "Ingresar";
             btnIngresar.UseVisualStyleBackColor = true;
-            btnIngresar.Click += button1_Click;
+            btnIngresar.Click += btn_login;
             // 
             // label1
             // 
@@ -73,6 +73,7 @@
             txtUsuario.Name = "txtUsuario";
             txtUsuario.Size = new Size(178, 23);
             txtUsuario.TabIndex = 2;
+            txtUsuario.TextChanged += txtUsuario_TextChanged;
             // 
             // btnsalir
             // 
@@ -83,6 +84,7 @@
             btnsalir.TabIndex = 3;
             btnsalir.Text = "Salir";
             btnsalir.UseVisualStyleBackColor = true;
+            btnsalir.Click += btn_salir;
             // 
             // txtContrasena
             // 
@@ -90,6 +92,7 @@
             txtContrasena.Name = "txtContrasena";
             txtContrasena.Size = new Size(178, 23);
             txtContrasena.TabIndex = 4;
+            txtContrasena.TextChanged += txtContrasena_TextChanged;
             // 
             // label2
             // 

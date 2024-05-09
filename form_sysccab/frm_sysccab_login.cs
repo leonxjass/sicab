@@ -8,75 +8,82 @@ namespace form_sysccab_menu
 {
     public partial class frm_sysccab_login : Form
     {
-        SqlConnection conexion = new SqlConnection("Data Source=ITDAJL03;Initial Catalog=prueba;User ID=anderson.leon;Integrated Security=true");
 
         public frm_sysccab_login()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        /*
+         * Instancia de la conexion al SQLSERVER 
+         */
+
+        private bool VerificarCredenciales(string usuario, string contrasena) 
         {
-            getConexion();
+            /*
+             * Poner aqui la logica de la conexion al sql server para instanciar la conexion
+             * se debe comparar a los parametros del metodo con los campos [nombre_usuario] & [contrasena]
+             * para validar la conexion y que lance el [main_menu] del sistema
+             * Entonces se obtiene los datos de la DB y se comparan contra los parametros del metodo usando el parametro this
+             */
+
+            return false;
         }
 
-        private void getConexion()
+        /*
+         * Componentes del formulario login
+         */
+
+        private void btn_login(object sender, EventArgs e)
         {
-            try
+            string user = txtUsuario.Text;          //Recibimos el [value] del label txtUsuario
+            string passwd = txtContrasena.Text;     //Recibimos el [value] del label txtContrasena
+
+            if (ValidarUsuario(user, passwd))
             {
-                string consulta = "SELECT * FROM usuarios WHERE nombre_usuario = @usuario AND contraseña = @contraseña";
-                SqlCommand cmd = new SqlCommand(consulta, conexion);
-                cmd.Parameters.AddWithValue("@usuario", txtUsuario.Text);
-                cmd.Parameters.AddWithValue("@contraseña", txtContrasena.Text);
-
-                conexion.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                if (reader.Read())
-                {
-                    MessageBox.Show("¡Bienvenido " + reader["nombre"] + " " + reader["apellido"] + "!");
-
-                    // Cerrar la conexión
-                    conexion.Close();
-
-                    // Mostrar el formulario del menú
-                    frm_sysccab_menu formularioMenu = new frm_sysccab_menu();
-                    //formularioMenu.Show();
-
-                    // Ocultar este formulario
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Usuario no válido");
-                }
+                frm_sysccab_menu mainMenu = new frm_sysccab_menu();
+                mainMenu.Show();
+                this.Hide();                        // Este formulario se oculta
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Usuario o contraseña incorrectos. Inténtalo de nuevo.", "Error de inicio de sesión", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            finally
+        }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtContrasena_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_salir(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        /*
+         * Metodos analogos de prueba para validar datos
+         */
+
+        private bool ValidarUsuario(string usuario, string contrasena)
+        {
+            if (usuario == "admin" && contrasena == "temporal2024")
             {
-                if (conexion.State == ConnectionState.Open)
-                {
-                    conexion.Close();
-                }
+                return true;
             }
+            else
+                return false;
         }
 
         private void frm_sysccab_login_Load(object sender, EventArgs e)
         {
-            try
-            {
-                if (conexion.State != ConnectionState.Open)
-                {
-                    conexion.Open();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+
         }
+
     }
 }
