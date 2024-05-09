@@ -8,3 +8,4 @@ eber conexion y push
 yohanna conexion
 yohanna conexion push
 eber 3
+Bitacora - Leon: Se enlazo los dos form principales y se creo el metodo de prueba de validaciones, Ahora hay que crear la conexion SQL
