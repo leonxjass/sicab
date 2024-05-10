@@ -12,6 +12,13 @@ namespace form_sysccab_menu
         public frm_sysccab_login()
         {
             InitializeComponent();
+            passToChar();   
+
+        }
+
+        private bool passToChar() {
+            return txtContrasena.UseSystemPasswordChar = true;
+
         }
 
         /*
