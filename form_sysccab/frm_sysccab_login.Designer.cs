@@ -49,6 +49,7 @@
             // btnIngresar
             // 
             btnIngresar.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnIngresar.ForeColor = Color.FromArgb(0, 0, 192);
             btnIngresar.Location = new Point(54, 302);
             btnIngresar.Name = "btnIngresar";
             btnIngresar.Size = new Size(108, 33);
@@ -78,6 +79,7 @@
             // btnsalir
             // 
             btnsalir.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnsalir.ForeColor = Color.Navy;
             btnsalir.Location = new Point(193, 302);
             btnsalir.Name = "btnsalir";
             btnsalir.Size = new Size(101, 33);
@@ -117,6 +119,7 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.FromArgb(3, 3, 17);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(txtUsuario);
@@ -126,6 +129,7 @@
             panel1.Controls.Add(label1);
             panel1.Controls.Add(txtContrasena);
             panel1.Controls.Add(btnsalir);
+            panel1.ForeColor = Color.Snow;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(413, 449);
@@ -133,32 +137,32 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.BackColor = SystemColors.ActiveCaptionText;
+            pictureBox2.BackColor = Color.Transparent;
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(69, 226);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(32, 27);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.Size = new Size(25, 25);
+            pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox2.TabIndex = 8;
             pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = SystemColors.ActiveCaptionText;
+            pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(69, 168);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(32, 27);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.Size = new Size(25, 25);
+            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(100, -31);
+            pictureBox3.Location = new Point(410, 0);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(709, 480);
+            pictureBox3.Size = new Size(392, 449);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 8;
             pictureBox3.TabStop = false;

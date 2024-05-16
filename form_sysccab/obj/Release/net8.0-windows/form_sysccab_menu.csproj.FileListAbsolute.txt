@@ -72,3 +72,4 @@ C:\Users\anderson.leon\Desktop\sicab\form_sysccab\obj\Release\net8.0-windows\for
 C:\Users\anderson.leon\Desktop\sicab\form_sysccab\obj\Release\net8.0-windows\form_sysccab_menu.Properties.Resources.resources
 C:\Users\anderson.leon\Desktop\sicab\form_sysccab\obj\Release\net8.0-windows\form_sys.0C96ED63.Up2Date
 C:\Users\anderson.leon\Desktop\sicab\form_sysccab\obj\Release\net8.0-windows\form_sysccab.frm_sysccab_menu.resources
+C:\Users\anderson.leon\Desktop\sicab\form_sysccab\obj\Release\net8.0-windows\form_sysccab_menu.Expedientes.Expedientes_de_clientes.resources
