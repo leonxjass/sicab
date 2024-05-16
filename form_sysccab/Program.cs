@@ -1,4 +1,5 @@
 using form_sysccab_menu;
+using form_sysccab_menu.Expedientes;
 
 namespace form_sysccab
 {
@@ -13,7 +14,7 @@ namespace form_sysccab
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new frm_sysccab_login());
+            Application.Run(new Expedientes_de_clientes());
         }
     }
 }
