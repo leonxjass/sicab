@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("form_sysccab_menu")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b85a8c2e09b964ce2f5ec0d1e15abe1aebeb09af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce2cb0e7fc0a981abc8c750c44db089485eb2426")]
 [assembly: System.Reflection.AssemblyProductAttribute("form_sysccab_menu")]
 [assembly: System.Reflection.AssemblyTitleAttribute("form_sysccab_menu")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
