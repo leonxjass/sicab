@@ -18,11 +18,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frm_expedientes_clientes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\Expedientes\\frm_expedientes_clientes.cs",
+              "RelativeDocumentMoniker": "Expedientes\\frm_expedientes_clientes.cs",
+              "ToolTip": "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\Expedientes\\frm_expedientes_clientes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Expedientes\\frm_expedientes_clientes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T18:51:26.754Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
@@ -36,18 +48,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T19:11:53.296Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frm_expedientes_clientes.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\Expedientes\\frm_expedientes_clientes.cs",
-              "RelativeDocumentMoniker": "Expedientes\\frm_expedientes_clientes.cs",
-              "ToolTip": "C:\\Users\\anderson.leon\\Desktop\\sicab\\form_sysccab\\Expedientes\\frm_expedientes_clientes.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Expedientes\\frm_expedientes_clientes.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T18:37:17.341Z",
-              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

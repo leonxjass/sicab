@@ -286,7 +286,6 @@
             lbl_rtnCliente.Size = new Size(94, 15);
             lbl_rtnCliente.TabIndex = 18;
             lbl_rtnCliente.Text = "Número de RTN:";
-            lbl_rtnCliente.Click += this.lbl_rtnCliente_Click;
             // 
             // txt_idCliente
             // 
