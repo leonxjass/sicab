@@ -44,6 +44,14 @@
             btn_nuevo = new Button();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            cbx_zona = new ComboBox();
+            textBox5 = new TextBox();
+            label1 = new Label();
+            rbd_viviendaCliente = new RadioButton();
+            rdb_viviendaCliente = new RadioButton();
+            textBox4 = new TextBox();
+            lbl_categoriaCliente = new Label();
+            edadCliente = new CheckBox();
             textBox3 = new TextBox();
             lbl_rtnCliente = new Label();
             txt_idCliente = new TextBox();
@@ -67,14 +75,15 @@
             tabPage2 = new TabPage();
             tabPage3 = new TabPage();
             tabPage4 = new TabPage();
-            edadCliente = new CheckBox();
-            lbl_categoriaCliente = new Label();
-            textBox4 = new TextBox();
-            lst_box_categoriasCliente = new ListBox();
-            rdb_viviendaCliente = new RadioButton();
-            rbd_viviendaCliente = new RadioButton();
-            textBox5 = new TextBox();
-            label1 = new Label();
+            lbl_colonia = new Label();
+            lbl_Zona = new Label();
+            lbl_subZona = new Label();
+            txt_colonia = new TextBox();
+            txt_Zona = new TextBox();
+            txt_subZona = new TextBox();
+            txt_zonaCodigo = new TextBox();
+            txt_subZonaCliente = new TextBox();
+            txt_zonaCliente = new TextBox();
             panel1.SuspendLayout();
             pnl_expedientes_nav.SuspendLayout();
             tabControl1.SuspendLayout();
@@ -234,11 +243,20 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(txt_subZonaCliente);
+            tabPage1.Controls.Add(txt_zonaCodigo);
+            tabPage1.Controls.Add(txt_zonaCliente);
+            tabPage1.Controls.Add(txt_subZona);
+            tabPage1.Controls.Add(txt_Zona);
+            tabPage1.Controls.Add(txt_colonia);
+            tabPage1.Controls.Add(lbl_subZona);
+            tabPage1.Controls.Add(lbl_Zona);
+            tabPage1.Controls.Add(lbl_colonia);
+            tabPage1.Controls.Add(cbx_zona);
             tabPage1.Controls.Add(textBox5);
             tabPage1.Controls.Add(label1);
             tabPage1.Controls.Add(rbd_viviendaCliente);
             tabPage1.Controls.Add(rdb_viviendaCliente);
-            tabPage1.Controls.Add(lst_box_categoriasCliente);
             tabPage1.Controls.Add(textBox4);
             tabPage1.Controls.Add(lbl_categoriaCliente);
             tabPage1.Controls.Add(edadCliente);
@@ -269,6 +287,79 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Datos Generales";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // cbx_zona
+            // 
+            cbx_zona.FormattingEnabled = true;
+            cbx_zona.Items.AddRange(new object[] { "Estos", "Datos", "se Jalan", "de la", "BASe" });
+            cbx_zona.Location = new Point(105, 152);
+            cbx_zona.Name = "cbx_zona";
+            cbx_zona.Size = new Size(177, 23);
+            cbx_zona.TabIndex = 29;
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(726, 77);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(104, 23);
+            textBox5.TabIndex = 28;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(628, 81);
+            label1.Name = "label1";
+            label1.Size = new Size(98, 15);
+            label1.TabIndex = 27;
+            label1.Text = "Codigo de ENEE: ";
+            // 
+            // rbd_viviendaCliente
+            // 
+            rbd_viviendaCliente.AutoSize = true;
+            rbd_viviendaCliente.Location = new Point(360, 117);
+            rbd_viviendaCliente.Name = "rbd_viviendaCliente";
+            rbd_viviendaCliente.Size = new Size(65, 19);
+            rbd_viviendaCliente.TabIndex = 26;
+            rbd_viviendaCliente.TabStop = true;
+            rbd_viviendaCliente.Text = "Juridica";
+            rbd_viviendaCliente.UseVisualStyleBackColor = true;
+            // 
+            // rdb_viviendaCliente
+            // 
+            rdb_viviendaCliente.AutoSize = true;
+            rdb_viviendaCliente.Location = new Point(290, 116);
+            rdb_viviendaCliente.Name = "rdb_viviendaCliente";
+            rdb_viviendaCliente.Size = new Size(64, 19);
+            rdb_viviendaCliente.TabIndex = 25;
+            rdb_viviendaCliente.TabStop = true;
+            rdb_viviendaCliente.Text = "Natural";
+            rdb_viviendaCliente.UseVisualStyleBackColor = true;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(133, 112);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(27, 23);
+            textBox4.TabIndex = 23;
+            // 
+            // lbl_categoriaCliente
+            // 
+            lbl_categoriaCliente.AutoSize = true;
+            lbl_categoriaCliente.Location = new Point(8, 116);
+            lbl_categoriaCliente.Name = "lbl_categoriaCliente";
+            lbl_categoriaCliente.Size = new Size(120, 15);
+            lbl_categoriaCliente.TabIndex = 22;
+            lbl_categoriaCliente.Text = "Categoria de Cliente :";
+            // 
+            // edadCliente
+            // 
+            edadCliente.AutoSize = true;
+            edadCliente.Location = new Point(535, 80);
+            edadCliente.Name = "edadCliente";
+            edadCliente.Size = new Size(92, 19);
+            edadCliente.TabIndex = 21;
+            edadCliente.Text = "Tercera Edad";
+            edadCliente.UseVisualStyleBackColor = true;
             // 
             // textBox3
             // 
@@ -461,79 +552,77 @@
             tabPage4.Text = "Datos de instalación";
             tabPage4.UseVisualStyleBackColor = true;
             // 
-            // edadCliente
+            // lbl_colonia
             // 
-            edadCliente.AutoSize = true;
-            edadCliente.Location = new Point(535, 80);
-            edadCliente.Name = "edadCliente";
-            edadCliente.Size = new Size(92, 19);
-            edadCliente.TabIndex = 21;
-            edadCliente.Text = "Tercera Edad";
-            edadCliente.UseVisualStyleBackColor = true;
+            lbl_colonia.AutoSize = true;
+            lbl_colonia.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lbl_colonia.Location = new Point(12, 155);
+            lbl_colonia.Name = "lbl_colonia";
+            lbl_colonia.Size = new Size(53, 15);
+            lbl_colonia.TabIndex = 30;
+            lbl_colonia.Text = "Colonia :";
             // 
-            // lbl_categoriaCliente
+            // lbl_Zona
             // 
-            lbl_categoriaCliente.AutoSize = true;
-            lbl_categoriaCliente.Location = new Point(8, 122);
-            lbl_categoriaCliente.Name = "lbl_categoriaCliente";
-            lbl_categoriaCliente.Size = new Size(120, 15);
-            lbl_categoriaCliente.TabIndex = 22;
-            lbl_categoriaCliente.Text = "Categoria de Cliente :";
+            lbl_Zona.AutoSize = true;
+            lbl_Zona.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lbl_Zona.Location = new Point(12, 181);
+            lbl_Zona.Name = "lbl_Zona";
+            lbl_Zona.Size = new Size(40, 15);
+            lbl_Zona.TabIndex = 31;
+            lbl_Zona.Text = "Zona :";
             // 
-            // textBox4
+            // lbl_subZona
             // 
-            textBox4.Location = new Point(133, 119);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(27, 23);
-            textBox4.TabIndex = 23;
+            lbl_subZona.AutoSize = true;
+            lbl_subZona.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lbl_subZona.Location = new Point(12, 206);
+            lbl_subZona.Name = "lbl_subZona";
+            lbl_subZona.Size = new Size(66, 15);
+            lbl_subZona.TabIndex = 32;
+            lbl_subZona.Text = "Sub-Zona :";
             // 
-            // lst_box_categoriasCliente
+            // txt_colonia
             // 
-            lst_box_categoriasCliente.FormattingEnabled = true;
-            lst_box_categoriasCliente.ItemHeight = 15;
-            lst_box_categoriasCliente.Items.AddRange(new object[] { "Viviendas 1", "Viviendas 2", "Viviendas 3", "Viviendas 4" });
-            lst_box_categoriasCliente.Location = new Point(162, 122);
-            lst_box_categoriasCliente.Name = "lst_box_categoriasCliente";
-            lst_box_categoriasCliente.Size = new Size(120, 19);
-            lst_box_categoriasCliente.TabIndex = 24;
+            txt_colonia.Location = new Point(77, 152);
+            txt_colonia.Name = "txt_colonia";
+            txt_colonia.Size = new Size(27, 23);
+            txt_colonia.TabIndex = 33;
             // 
-            // rdb_viviendaCliente
+            // txt_Zona
             // 
-            rdb_viviendaCliente.AutoSize = true;
-            rdb_viviendaCliente.Location = new Point(286, 122);
-            rdb_viviendaCliente.Name = "rdb_viviendaCliente";
-            rdb_viviendaCliente.Size = new Size(64, 19);
-            rdb_viviendaCliente.TabIndex = 25;
-            rdb_viviendaCliente.TabStop = true;
-            rdb_viviendaCliente.Text = "Natural";
-            rdb_viviendaCliente.UseVisualStyleBackColor = true;
+            txt_Zona.Location = new Point(77, 178);
+            txt_Zona.Name = "txt_Zona";
+            txt_Zona.Size = new Size(27, 23);
+            txt_Zona.TabIndex = 34;
             // 
-            // rbd_viviendaCliente
+            // txt_subZona
             // 
-            rbd_viviendaCliente.AutoSize = true;
-            rbd_viviendaCliente.Location = new Point(356, 123);
-            rbd_viviendaCliente.Name = "rbd_viviendaCliente";
-            rbd_viviendaCliente.Size = new Size(65, 19);
-            rbd_viviendaCliente.TabIndex = 26;
-            rbd_viviendaCliente.TabStop = true;
-            rbd_viviendaCliente.Text = "Juridica";
-            rbd_viviendaCliente.UseVisualStyleBackColor = true;
+            txt_subZona.Location = new Point(77, 203);
+            txt_subZona.Name = "txt_subZona";
+            txt_subZona.Size = new Size(27, 23);
+            txt_subZona.TabIndex = 35;
             // 
-            // textBox5
+            // txt_zonaCodigo
             // 
-            textBox5.Location = new Point(736, 81);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(104, 23);
-            textBox5.TabIndex = 28;
+            txt_zonaCodigo.Location = new Point(284, 152);
+            txt_zonaCodigo.Name = "txt_zonaCodigo";
+            txt_zonaCodigo.Size = new Size(27, 23);
+            txt_zonaCodigo.TabIndex = 37;
             // 
-            // label1
+            // txt_subZonaCliente
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(633, 84);
-            label1.Name = "label1";
-            label1.Size = new Size(98, 15);
-            label1.TabIndex = 27;
-            label1.Text = "Codigo de ENEE: ";
+            txt_subZonaCliente.Location = new Point(105, 203);
+            txt_subZonaCliente.Name = "txt_subZonaCliente";
+            txt_subZonaCliente.Size = new Size(206, 23);
+            txt_subZonaCliente.TabIndex = 38;
+            // 
+            // txt_zonaCliente
+            // 
+            txt_zonaCliente.Location = new Point(105, 178);
+            txt_zonaCliente.Name = "txt_zonaCliente";
+            txt_zonaCliente.Size = new Size(206, 23);
+            txt_zonaCliente.TabIndex = 36;
             // 
             // Expedientes_de_clientes
             // 
@@ -598,8 +687,18 @@
         private TextBox textBox4;
         private RadioButton rbd_viviendaCliente;
         private RadioButton rdb_viviendaCliente;
-        private ListBox lst_box_categoriasCliente;
         private TextBox textBox5;
         private Label label1;
+        private ComboBox cbx_zona;
+        private TextBox txt_subZona;
+        private TextBox txt_Zona;
+        private TextBox txt_colonia;
+        private Label lbl_subZona;
+        private Label lbl_Zona;
+        private Label lbl_colonia;
+        private TextBox textBox6;
+        private TextBox txt_subZonaCliente;
+        private TextBox txt_zonaCodigo;
+        private TextBox txt_zonaCliente;
     }
 }
