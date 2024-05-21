@@ -44,6 +44,15 @@
             btn_nuevo = new Button();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            txt_subZonaCliente = new TextBox();
+            txt_zonaCodigo = new TextBox();
+            txt_zonaCliente = new TextBox();
+            txt_subZona = new TextBox();
+            txt_Zona = new TextBox();
+            txt_colonia = new TextBox();
+            lbl_subZona = new Label();
+            lbl_Zona = new Label();
+            lbl_colonia = new Label();
             cbx_zona = new ComboBox();
             textBox5 = new TextBox();
             label1 = new Label();
@@ -75,15 +84,7 @@
             tabPage2 = new TabPage();
             tabPage3 = new TabPage();
             tabPage4 = new TabPage();
-            lbl_colonia = new Label();
-            lbl_Zona = new Label();
-            lbl_subZona = new Label();
-            txt_colonia = new TextBox();
-            txt_Zona = new TextBox();
-            txt_subZona = new TextBox();
-            txt_zonaCodigo = new TextBox();
-            txt_subZonaCliente = new TextBox();
-            txt_zonaCliente = new TextBox();
+            comboBox1 = new ComboBox();
             panel1.SuspendLayout();
             pnl_expedientes_nav.SuspendLayout();
             tabControl1.SuspendLayout();
@@ -243,6 +244,7 @@
             // 
             // tabPage1
             // 
+            tabPage1.Controls.Add(comboBox1);
             tabPage1.Controls.Add(txt_subZonaCliente);
             tabPage1.Controls.Add(txt_zonaCodigo);
             tabPage1.Controls.Add(txt_zonaCliente);
@@ -287,6 +289,78 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Datos Generales";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // txt_subZonaCliente
+            // 
+            txt_subZonaCliente.Location = new Point(105, 203);
+            txt_subZonaCliente.Name = "txt_subZonaCliente";
+            txt_subZonaCliente.Size = new Size(206, 23);
+            txt_subZonaCliente.TabIndex = 38;
+            // 
+            // txt_zonaCodigo
+            // 
+            txt_zonaCodigo.Location = new Point(284, 152);
+            txt_zonaCodigo.Name = "txt_zonaCodigo";
+            txt_zonaCodigo.Size = new Size(27, 23);
+            txt_zonaCodigo.TabIndex = 37;
+            // 
+            // txt_zonaCliente
+            // 
+            txt_zonaCliente.Location = new Point(105, 178);
+            txt_zonaCliente.Name = "txt_zonaCliente";
+            txt_zonaCliente.Size = new Size(206, 23);
+            txt_zonaCliente.TabIndex = 36;
+            // 
+            // txt_subZona
+            // 
+            txt_subZona.Location = new Point(77, 203);
+            txt_subZona.Name = "txt_subZona";
+            txt_subZona.Size = new Size(27, 23);
+            txt_subZona.TabIndex = 35;
+            // 
+            // txt_Zona
+            // 
+            txt_Zona.Location = new Point(77, 178);
+            txt_Zona.Name = "txt_Zona";
+            txt_Zona.Size = new Size(27, 23);
+            txt_Zona.TabIndex = 34;
+            // 
+            // txt_colonia
+            // 
+            txt_colonia.Location = new Point(77, 152);
+            txt_colonia.Name = "txt_colonia";
+            txt_colonia.Size = new Size(27, 23);
+            txt_colonia.TabIndex = 33;
+            // 
+            // lbl_subZona
+            // 
+            lbl_subZona.AutoSize = true;
+            lbl_subZona.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lbl_subZona.Location = new Point(12, 206);
+            lbl_subZona.Name = "lbl_subZona";
+            lbl_subZona.Size = new Size(66, 15);
+            lbl_subZona.TabIndex = 32;
+            lbl_subZona.Text = "Sub-Zona :";
+            // 
+            // lbl_Zona
+            // 
+            lbl_Zona.AutoSize = true;
+            lbl_Zona.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lbl_Zona.Location = new Point(12, 181);
+            lbl_Zona.Name = "lbl_Zona";
+            lbl_Zona.Size = new Size(40, 15);
+            lbl_Zona.TabIndex = 31;
+            lbl_Zona.Text = "Zona :";
+            // 
+            // lbl_colonia
+            // 
+            lbl_colonia.AutoSize = true;
+            lbl_colonia.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lbl_colonia.Location = new Point(12, 155);
+            lbl_colonia.Name = "lbl_colonia";
+            lbl_colonia.Size = new Size(53, 15);
+            lbl_colonia.TabIndex = 30;
+            lbl_colonia.Text = "Colonia :";
             // 
             // cbx_zona
             // 
@@ -552,77 +626,14 @@
             tabPage4.Text = "Datos de instalación";
             tabPage4.UseVisualStyleBackColor = true;
             // 
-            // lbl_colonia
+            // comboBox1
             // 
-            lbl_colonia.AutoSize = true;
-            lbl_colonia.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lbl_colonia.Location = new Point(12, 155);
-            lbl_colonia.Name = "lbl_colonia";
-            lbl_colonia.Size = new Size(53, 15);
-            lbl_colonia.TabIndex = 30;
-            lbl_colonia.Text = "Colonia :";
-            // 
-            // lbl_Zona
-            // 
-            lbl_Zona.AutoSize = true;
-            lbl_Zona.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lbl_Zona.Location = new Point(12, 181);
-            lbl_Zona.Name = "lbl_Zona";
-            lbl_Zona.Size = new Size(40, 15);
-            lbl_Zona.TabIndex = 31;
-            lbl_Zona.Text = "Zona :";
-            // 
-            // lbl_subZona
-            // 
-            lbl_subZona.AutoSize = true;
-            lbl_subZona.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lbl_subZona.Location = new Point(12, 206);
-            lbl_subZona.Name = "lbl_subZona";
-            lbl_subZona.Size = new Size(66, 15);
-            lbl_subZona.TabIndex = 32;
-            lbl_subZona.Text = "Sub-Zona :";
-            // 
-            // txt_colonia
-            // 
-            txt_colonia.Location = new Point(77, 152);
-            txt_colonia.Name = "txt_colonia";
-            txt_colonia.Size = new Size(27, 23);
-            txt_colonia.TabIndex = 33;
-            // 
-            // txt_Zona
-            // 
-            txt_Zona.Location = new Point(77, 178);
-            txt_Zona.Name = "txt_Zona";
-            txt_Zona.Size = new Size(27, 23);
-            txt_Zona.TabIndex = 34;
-            // 
-            // txt_subZona
-            // 
-            txt_subZona.Location = new Point(77, 203);
-            txt_subZona.Name = "txt_subZona";
-            txt_subZona.Size = new Size(27, 23);
-            txt_subZona.TabIndex = 35;
-            // 
-            // txt_zonaCodigo
-            // 
-            txt_zonaCodigo.Location = new Point(284, 152);
-            txt_zonaCodigo.Name = "txt_zonaCodigo";
-            txt_zonaCodigo.Size = new Size(27, 23);
-            txt_zonaCodigo.TabIndex = 37;
-            // 
-            // txt_subZonaCliente
-            // 
-            txt_subZonaCliente.Location = new Point(105, 203);
-            txt_subZonaCliente.Name = "txt_subZonaCliente";
-            txt_subZonaCliente.Size = new Size(206, 23);
-            txt_subZonaCliente.TabIndex = 38;
-            // 
-            // txt_zonaCliente
-            // 
-            txt_zonaCliente.Location = new Point(105, 178);
-            txt_zonaCliente.Name = "txt_zonaCliente";
-            txt_zonaCliente.Size = new Size(206, 23);
-            txt_zonaCliente.TabIndex = 36;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Estos", "Datos", "se Jalan", "de la", "BASe" });
+            comboBox1.Location = new Point(165, 113);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(119, 23);
+            comboBox1.TabIndex = 39;
             // 
             // Expedientes_de_clientes
             // 
@@ -700,5 +711,6 @@
         private TextBox txt_subZonaCliente;
         private TextBox txt_zonaCodigo;
         private TextBox txt_zonaCliente;
+        private ComboBox comboBox1;
     }
 }

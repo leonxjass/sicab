@@ -16,5 +16,12 @@ namespace form_sysccab
         {
 
         }
+
+        private void expedientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            form_sysccab_menu.Expedientes.Expedientes_de_clientes expedientesDeClientes = new form_sysccab_menu.Expedientes.Expedientes_de_clientes();
+            expedientesDeClientes.Show();
+            this.Hide();
+        }
     }
 }

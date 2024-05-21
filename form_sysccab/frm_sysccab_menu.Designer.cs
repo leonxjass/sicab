@@ -158,7 +158,7 @@ namespace form_sysccab
             menuStrip1.Items.AddRange(new ToolStripItem[] { servicioAlClienteToolStripMenuItem, expedienesToolStripMenuItem, pagosToolStripMenuItem, areaTécnicaToolStripMenuItem, dercaToolStripMenuItem, clasificadoresToolStripMenuItem, utilidadesToolStripMenuItem, administracionToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(649, 24);
+            menuStrip1.Size = new Size(769, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -279,7 +279,8 @@ namespace form_sysccab
             // 
             expedientesToolStripMenuItem.Name = "expedientesToolStripMenuItem";
             expedientesToolStripMenuItem.Size = new Size(288, 22);
-            expedientesToolStripMenuItem.Text = "Expedientes";
+            expedientesToolStripMenuItem.Text = "Expedientes de clientes";
+            expedientesToolStripMenuItem.Click += expedientesToolStripMenuItem_Click;
             // 
             // datosTecnicosDeExpedienteDeInternetToolStripMenuItem
             // 
@@ -816,7 +817,7 @@ namespace form_sysccab
             generarAgendaParaElSiguientePeriodoToolStripMenuItem.Size = new Size(290, 22);
             generarAgendaParaElSiguientePeriodoToolStripMenuItem.Text = "Generar agenda para el siguiente periodo";
             // 
-            // main_form
+            // frm_sysccab_menu
             // 
             AccessibleDescription = "formulario inicial del sistema sysccab";
             AccessibleName = "mf1";
@@ -829,7 +830,7 @@ namespace form_sysccab
             MainMenuStrip = menuStrip1;
             MaximumSize = new Size(1600, 900);
             MinimumSize = new Size(1000, 720);
-            Name = "main_form";
+            Name = "frm_sysccab_menu";
             SizeGripStyle = SizeGripStyle.Show;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Sysccab Inicio";
