@@ -44,6 +44,7 @@
             btn_nuevo = new Button();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            comboBox1 = new ComboBox();
             txt_subZonaCliente = new TextBox();
             txt_zonaCodigo = new TextBox();
             txt_zonaCliente = new TextBox();
@@ -84,7 +85,6 @@
             tabPage2 = new TabPage();
             tabPage3 = new TabPage();
             tabPage4 = new TabPage();
-            comboBox1 = new ComboBox();
             panel1.SuspendLayout();
             pnl_expedientes_nav.SuspendLayout();
             tabControl1.SuspendLayout();
@@ -129,6 +129,7 @@
             btn_salir.TabIndex = 11;
             btn_salir.Text = "Salir";
             btn_salir.UseVisualStyleBackColor = true;
+            btn_salir.Click += btn_salir_Click;
             // 
             // btn_sysLog
             // 
@@ -289,6 +290,15 @@
             tabPage1.TabIndex = 0;
             tabPage1.Text = "Datos Generales";
             tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Estos", "Datos", "se Jalan", "de la", "BASe" });
+            comboBox1.Location = new Point(165, 113);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(119, 23);
+            comboBox1.TabIndex = 39;
             // 
             // txt_subZonaCliente
             // 
@@ -625,15 +635,6 @@
             tabPage4.TabIndex = 3;
             tabPage4.Text = "Datos de instalación";
             tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Estos", "Datos", "se Jalan", "de la", "BASe" });
-            comboBox1.Location = new Point(165, 113);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(119, 23);
-            comboBox1.TabIndex = 39;
             // 
             // Expedientes_de_clientes
             // 

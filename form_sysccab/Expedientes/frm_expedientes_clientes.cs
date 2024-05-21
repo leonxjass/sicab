@@ -1,4 +1,5 @@
-﻿using System;
+﻿using form_sysccab;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,12 @@ namespace form_sysccab_menu.Expedientes
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_salir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+            Application.Run(new frm_sysccab_login());
         }
     }
 }
